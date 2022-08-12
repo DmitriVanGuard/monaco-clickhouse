@@ -256,6 +256,7 @@ export const language = <languages.IMonarchLanguage>{
 		'SIMILAR',
 		'SNAPSHOT',
 		'SOME',
+		'SHOW',
 		'SYSDATE',
 		'SYSTEM',
 		'TABLE',
@@ -1275,6 +1276,7 @@ export const language = <languages.IMonarchLanguage>{
 	tokenizer: {
 		root: [
 			{ include: '@comments' },
+			{ include: '@annotations' },
 			{ include: '@whitespace' },
 			{ include: '@pseudoColumns' },
 			{ include: '@numbers' },
@@ -1297,6 +1299,9 @@ export const language = <languages.IMonarchLanguage>{
 			],
 			[/[<>=!%&+\-*/|~^]/, 'operator']
 		],
+
+		annotations: [],
+
 		whitespace: [[/\s+/, 'white']],
 		comments: [
 			[/--+.*/, 'comment'],

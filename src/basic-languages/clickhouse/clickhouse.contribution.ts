@@ -13,12 +13,6 @@ registerLanguage({
 	extensions: [''],
 	aliases: ['ClickHouse', 'Clickhouse'],
 	loader: () => {
-		if (AMD) {
-			return new Promise((resolve, reject) => {
-				require(['vs/basic-languages/clickhouse/clickhouse'], resolve, reject);
-			});
-		} else {
 			return import('./clickhouse');
-		}
 	}
 });

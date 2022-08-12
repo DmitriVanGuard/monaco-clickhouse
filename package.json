@@ -12,7 +12,6 @@
 		"package-for-smoketest-esbuild": "ts-node ./test/smoke/package-esbuild",
 		"playwright-install": "node ./node_modules/playwright/install.js",
 		"playwright-install-deps": "playwright install-deps",
-		"postinstall": "ts-node ./build/postinstall",
 		"prettier-check": "prettier --check .",
 		"prettier": "prettier --write .",
 		"pretty-quick": "pretty-quick --staged",

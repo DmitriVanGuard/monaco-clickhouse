@@ -1,5 +1,5 @@
 {
-	"name": "monaco-editor",
+	"name": "monaco-clickhouse",
 	"version": "0.33.0",
 	"vscode": "6a4e5cc26b29359472378c2a8951c33f4ea73244",
 	"private": true,

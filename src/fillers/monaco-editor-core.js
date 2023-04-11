@@ -27,4 +27,4 @@ var __exportStar =
 				__createBinding(exports, m, p);
 	};
 exports.__esModule = true;
-__exportStar(require('../../../monaco-editor/esm/vs/editor/editor.api.js'), exports);
+__exportStar(require('monaco-editor/esm/vs/editor/editor.api.js'), exports);
